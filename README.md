@@ -5,6 +5,15 @@
 </div>
 
 ## 环境要求
-> =C++11
+C++11及以上
 
 ## 构建
+* cd build
+* cmake .
+* make
+* cd ../bin
+* ./interpreter
+
+## 实现
+
+## 更多
