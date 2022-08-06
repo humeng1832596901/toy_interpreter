@@ -8,8 +8,8 @@
 #ifndef _PARSER_H
 #define _PARSER_H
 
-#include "../lexer/lexer.h"
-#include "../ast/ast.h"
+#include "../lexer/lexer.hpp"
+#include "../ast/ast.hpp"
 #include <functional>
 #include <iostream> //test
 

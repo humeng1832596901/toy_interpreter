@@ -8,7 +8,7 @@
 #ifndef _EVALUATOR_H
 #define _EVALUATOR_H
 
-#include "../ast/ast.h"
+#include "../ast/ast.hpp"
 #include "../object/object.h"
 #include "../environment/environment.h"
 #include "../builtin/builtin.h"
