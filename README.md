@@ -3,3 +3,9 @@
 <div align=center>
 <img src="https://img2.doubanio.com/view/subject/s/public/s29440083.jpg"/><img src="https://img3.doubanio.com/view/subject/s/public/s29849110.jpg"/>
 </div>
+不过不会Go，所以用C++写，目前已经把左边那本看完了，接下来几天争取把右边那本看完(开学前)
+
+## 环境要求
+C++11及以上
+
+## 构建
