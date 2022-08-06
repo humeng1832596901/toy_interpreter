@@ -14,7 +14,5 @@ C++11及以上
 * cd ../bin
 * ./interpreter
 
-## 实现
-
 ## 更多
 [基于C++的高级语言解释器](https://zhuanlan.zhihu.com/p/550031562)
