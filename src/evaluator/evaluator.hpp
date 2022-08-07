@@ -1,6 +1,3 @@
-#ifndef _EVALUATOR_H
-#define _EVALUATOR_H
-
 #include "../ast/ast.hpp"
 #include "../object/object.h"
 #include "../environment/environment.h"
@@ -410,5 +407,3 @@ std::shared_ptr<Object> Eval(Node* node, Environment* env){
         return evalWhileExpression(wExp, env);
     return nullObject;
 }
-
-#endif

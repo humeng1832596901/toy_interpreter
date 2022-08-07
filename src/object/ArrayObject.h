@@ -1,3 +1,4 @@
+#ifndef _ARRAYOBJECT_H
 #define _ARRAYOBJECT_H
 
 #include "Object.h"

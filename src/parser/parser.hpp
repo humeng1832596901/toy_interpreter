@@ -1,6 +1,3 @@
-#ifndef _PARSER_H
-#define _PARSER_H
-
 #include "../lexer/lexer.hpp"
 #include "../ast/ast.hpp"
 #include <functional>
@@ -565,5 +562,3 @@ Statement* Parser::parseExpressionStatement(){
     }
     return nullptr;
 }
-
-#endif

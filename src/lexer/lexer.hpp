@@ -1,6 +1,3 @@
-#ifndef _LEXER_H
-#define _LEXER_H
-
 #include "../token.h"
 
 struct Lexer{
@@ -199,5 +196,3 @@ Token Lexer::nextToken(){
     this->readChar();    
     return tok;
 }
-
-#endif

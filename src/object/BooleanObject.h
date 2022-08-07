@@ -1,3 +1,4 @@
+#ifndef _BOOLEANOBJECT_H
 #define _BOOLEANOBJECT_H
 
 #include "Object.h"
