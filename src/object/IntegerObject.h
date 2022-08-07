@@ -1,10 +1,3 @@
-/*******************************************************************
-	> File Name: IntegerObject.h
-	> Author: 胡孟
-	> Mail: 13535324513@163.com
-	> Created Time: Fri 05 Aug 2022 01:47:17 AM CST
- ******************************************************************/
-
 #ifndef _INTEGEROBJECT_H
 #define _INTEGEROBJECT_H
 

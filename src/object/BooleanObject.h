@@ -1,10 +1,3 @@
-/*******************************************************************
-	> File Name: BooleanObject.h
-	> Mail: 13535324513@163.com
-	> Created Time: Fri 05 Aug 2022 02:02:01 AM CST
- ******************************************************************/
-
-#ifndef _BOOLEANOBJECT_H
 #define _BOOLEANOBJECT_H
 
 #include "Object.h"

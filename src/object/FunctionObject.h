@@ -1,10 +1,3 @@
-/*******************************************************************
-	> File Name: FunctionObject.h
-	> Author: 胡孟
-	> Mail: 13535324513@163.com
-	> Created Time: Fri 05 Aug 2022 02:04:37 AM CST
- ******************************************************************/
-
 #ifndef _FUNCTIONOBJECT_H
 #define _FUNCTIONOBJECT_H
 

@@ -1,10 +1,3 @@
-/*******************************************************************
-	> File Name: environment.h
-	> Author: 胡孟
-	> Mail: 13535324513@163.com
-	> Created Time: Sun 31 Jul 2022 09:15:57 PM CST
- ******************************************************************/
-
 #ifndef _ENVIRONMENT_H
 #define _ENVIRONMENT_H
 

@@ -1,10 +1,3 @@
-/*******************************************************************
-	> File Name: ArrayObject.h
-	> Mail: 13535324513@163.com
-	> Created Time: Fri 05 Aug 2022 01:58:50 AM CST
- ******************************************************************/
-
-#ifndef _ARRAYOBJECT_H
 #define _ARRAYOBJECT_H
 
 #include "Object.h"

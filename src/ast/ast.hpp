@@ -1,10 +1,3 @@
-/*******************************************************************
-	> File Name: ast.h
-	> Author: 胡孟
-	> Mail: 13535324513@163.com
-	> Created Time: Tue 26 Jul 2022 02:09:42 PM CST
- ******************************************************************/
-
 #ifndef _AST_H
 #define _AST_H
 
@@ -33,6 +26,7 @@ struct Statement : Node{
 struct Expression : Node{
     virtual std::string TokenLiteral()const override{return "";}  
     virtual std::string String()const override{return ""; }
+    virtual ~Expression(){}
 };
 
 Statement* traitsAndNewStatement(Statement*);
