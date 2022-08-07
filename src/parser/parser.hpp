@@ -426,6 +426,9 @@ struct Parser{
     Program ParseProgram(){  
         Program program; 
         for(;curToken.TokenType != END; nextToken()){
+	    Statement* res = parseStatement();
+	    if(!res)
+		break;
             program.Statements.emplace_back(parseStatement());
         }
         return program;
