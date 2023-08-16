@@ -1,0 +1,568 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 4.15.0-20-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      cc: fatal error: ‘-fuse-linker-plugin’, but liblto_plugin.so not found
+      compilation terminated.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/3.26.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/suc/gcc-11.3.0/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/3.26.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-JZjD2m"
+      binary: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-JZjD2m"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-JZjD2m
+        
+        Run Build Command(s):/home/suc/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_521da/fast && /usr/bin/make  -f CMakeFiles/cmTC_521da.dir/build.make CMakeFiles/cmTC_521da.dir/build
+        make[1]: Entering directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-JZjD2m'
+        Building C object CMakeFiles/cmTC_521da.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_521da.dir/CMakeCCompilerABI.c.o -c /home/suc/cmake/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --disable-checking --enable-languages=c,c++,fortran --disable-multilib --prefix=/home/suc/gcc-11.3.0 --enable-threads=posix --disable-libsanitizer
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_521da.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_521da.dir/'
+         cc1 -quiet -v -imultiarch x86_64-linux-gnu -iprefix /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/ /home/suc/cmake/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_521da.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccrzEOMk.s
+        GNU C17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/suc/gcc-11.3.0/include/
+         /home/suc/gcc-11.3.0/tmp/gcc/include
+         /usr/local/include
+         /usr/bin/../lib/gcc/../../include
+         /usr/include/x86_64-linux-gnu
+        End of search list.
+        GNU C17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3191ab40214a76c8e4bc1f4aed377cca
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_521da.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_521da.dir/'
+         as -v --64 -o CMakeFiles/cmTC_521da.dir/CMakeCCompilerABI.c.o /tmp/ccrzEOMk.s
+        GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+        COMPILER_PATH=
+        LIBRARY_PATH=/usr/bin/../lib/gcc/x86_64-linux-gnu/:/usr/bin/../lib/gcc/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu/:./:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_521da.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_521da.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_521da
+        /home/suc/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_521da.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_521da.dir/CMakeCCompilerABI.c.o -o cmTC_521da 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --disable-checking --enable-languages=c,c++,fortran --disable-multilib --prefix=/home/suc/gcc-11.3.0 --enable-threads=posix --disable-libsanitizer
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        cc: fatal error: '-fuse-linker-plugin', but liblto_plugin.so not found
+        compilation terminated.
+        CMakeFiles/cmTC_521da.dir/build.make:98: recipe for target 'cmTC_521da' failed
+        make[1]: *** [cmTC_521da] Error 1
+        make[1]: Leaving directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-JZjD2m'
+        Makefile:127: recipe for target 'cmTC_521da/fast' failed
+        make: *** [cmTC_521da/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working C compiler: /usr/bin/cc"
+    directories:
+      source: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-q7WFR0"
+      binary: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-q7WFR0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-q7WFR0
+        
+        Run Build Command(s):/home/suc/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_4e55f/fast && /usr/bin/make  -f CMakeFiles/cmTC_4e55f.dir/build.make CMakeFiles/cmTC_4e55f.dir/build
+        make[1]: Entering directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-q7WFR0'
+        Building C object CMakeFiles/cmTC_4e55f.dir/testCCompiler.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_4e55f.dir/testCCompiler.c.o -c /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-q7WFR0/testCCompiler.c
+        Linking C executable cmTC_4e55f
+        /home/suc/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e55f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_4e55f.dir/testCCompiler.c.o -o cmTC_4e55f 
+        cc: fatal error: ‘-fuse-linker-plugin’, but liblto_plugin.so not found
+        compilation terminated.
+        CMakeFiles/cmTC_4e55f.dir/build.make:98: recipe for target 'cmTC_4e55f' failed
+        make[1]: *** [cmTC_4e55f] Error 1
+        make[1]: Leaving directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-q7WFR0'
+        Makefile:127: recipe for target 'cmTC_4e55f/fast' failed
+        make: *** [cmTC_4e55f/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      cc: fatal error: ‘-fuse-linker-plugin’, but liblto_plugin.so not found
+      compilation terminated.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/3.26.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/suc/gcc-11.3.0/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/3.26.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-WFIunu"
+      binary: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-WFIunu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-WFIunu
+        
+        Run Build Command(s):/home/suc/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_e7a9d/fast && /usr/bin/make  -f CMakeFiles/cmTC_e7a9d.dir/build.make CMakeFiles/cmTC_e7a9d.dir/build
+        make[1]: Entering directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-WFIunu'
+        Building C object CMakeFiles/cmTC_e7a9d.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_e7a9d.dir/CMakeCCompilerABI.c.o -c /home/suc/cmake/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --disable-checking --enable-languages=c,c++,fortran --disable-multilib --prefix=/home/suc/gcc-11.3.0 --enable-threads=posix --disable-libsanitizer
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e7a9d.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e7a9d.dir/'
+         cc1 -quiet -v -imultiarch x86_64-linux-gnu -iprefix /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/ /home/suc/cmake/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e7a9d.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccDErqzt.s
+        GNU C17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/suc/gcc-11.3.0/include/
+         /home/suc/gcc-11.3.0/tmp/gcc/include
+         /usr/local/include
+         /usr/bin/../lib/gcc/../../include
+         /usr/include/x86_64-linux-gnu
+        End of search list.
+        GNU C17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3191ab40214a76c8e4bc1f4aed377cca
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e7a9d.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e7a9d.dir/'
+         as -v --64 -o CMakeFiles/cmTC_e7a9d.dir/CMakeCCompilerABI.c.o /tmp/ccDErqzt.s
+        GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+        COMPILER_PATH=
+        LIBRARY_PATH=/usr/bin/../lib/gcc/x86_64-linux-gnu/:/usr/bin/../lib/gcc/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu/:./:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_e7a9d.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_e7a9d.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_e7a9d
+        /home/suc/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7a9d.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_e7a9d.dir/CMakeCCompilerABI.c.o -o cmTC_e7a9d 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --disable-checking --enable-languages=c,c++,fortran --disable-multilib --prefix=/home/suc/gcc-11.3.0 --enable-threads=posix --disable-libsanitizer
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        cc: fatal error: '-fuse-linker-plugin', but liblto_plugin.so not found
+        compilation terminated.
+        CMakeFiles/cmTC_e7a9d.dir/build.make:98: recipe for target 'cmTC_e7a9d' failed
+        make[1]: *** [cmTC_e7a9d] Error 1
+        make[1]: Leaving directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-WFIunu'
+        Makefile:127: recipe for target 'cmTC_e7a9d/fast' failed
+        make: *** [cmTC_e7a9d/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working C compiler: /usr/bin/cc"
+    directories:
+      source: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-Flm8mH"
+      binary: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-Flm8mH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-Flm8mH
+        
+        Run Build Command(s):/home/suc/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_7159f/fast && /usr/bin/make  -f CMakeFiles/cmTC_7159f.dir/build.make CMakeFiles/cmTC_7159f.dir/build
+        make[1]: Entering directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-Flm8mH'
+        Building C object CMakeFiles/cmTC_7159f.dir/testCCompiler.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_7159f.dir/testCCompiler.c.o -c /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-Flm8mH/testCCompiler.c
+        Linking C executable cmTC_7159f
+        /home/suc/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7159f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_7159f.dir/testCCompiler.c.o -o cmTC_7159f 
+        cc: fatal error: ‘-fuse-linker-plugin’, but liblto_plugin.so not found
+        compilation terminated.
+        CMakeFiles/cmTC_7159f.dir/build.make:98: recipe for target 'cmTC_7159f' failed
+        make[1]: *** [cmTC_7159f] Error 1
+        make[1]: Leaving directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-Flm8mH'
+        Makefile:127: recipe for target 'cmTC_7159f/fast' failed
+        make: *** [cmTC_7159f/fast] Error 2
+        
+      exitCode: 2
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      cc: fatal error: ‘-fuse-linker-plugin’, but liblto_plugin.so not found
+      compilation terminated.
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/3.26.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home/suc/gcc-11.3.0/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/3.26.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-ElQeLR"
+      binary: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-ElQeLR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-ElQeLR
+        
+        Run Build Command(s):/home/suc/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_505e2/fast && /usr/bin/make  -f CMakeFiles/cmTC_505e2.dir/build.make CMakeFiles/cmTC_505e2.dir/build
+        make[1]: Entering directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-ElQeLR'
+        Building C object CMakeFiles/cmTC_505e2.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_505e2.dir/CMakeCCompilerABI.c.o -c /home/suc/cmake/share/cmake-3.26/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --disable-checking --enable-languages=c,c++,fortran --disable-multilib --prefix=/home/suc/gcc-11.3.0 --enable-threads=posix --disable-libsanitizer
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_505e2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_505e2.dir/'
+         cc1 -quiet -v -imultiarch x86_64-linux-gnu -iprefix /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/ /home/suc/cmake/share/cmake-3.26/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_505e2.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccjTRapV.s
+        GNU C17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.3.0/include-fixed"
+        ignoring nonexistent directory "/usr/bin/../lib/gcc/../../lib/gcc/x86_64-pc-linux-gnu/11.3.0/../../../../x86_64-pc-linux-gnu/include"
+        ignoring duplicate directory "/usr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /home/suc/gcc-11.3.0/include/
+         /home/suc/gcc-11.3.0/tmp/gcc/include
+         /usr/local/include
+         /usr/bin/../lib/gcc/../../include
+         /usr/include/x86_64-linux-gnu
+        End of search list.
+        GNU C17 (GCC) version 11.3.0 (x86_64-pc-linux-gnu)
+        	compiled by GNU C version 11.3.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3191ab40214a76c8e4bc1f4aed377cca
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_505e2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_505e2.dir/'
+         as -v --64 -o CMakeFiles/cmTC_505e2.dir/CMakeCCompilerABI.c.o /tmp/ccjTRapV.s
+        GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
+        COMPILER_PATH=
+        LIBRARY_PATH=/usr/bin/../lib/gcc/x86_64-linux-gnu/:/usr/bin/../lib/gcc/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu/:/usr/lib/x86_64-linux-gnu/:./:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_505e2.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_505e2.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_505e2
+        /home/suc/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_505e2.dir/link.txt --verbose=1
+        /usr/bin/cc  -v CMakeFiles/cmTC_505e2.dir/CMakeCCompilerABI.c.o -o cmTC_505e2 
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/cc
+        Target: x86_64-pc-linux-gnu
+        Configured with: ../configure --disable-checking --enable-languages=c,c++,fortran --disable-multilib --prefix=/home/suc/gcc-11.3.0 --enable-threads=posix --disable-libsanitizer
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 11.3.0 (GCC) 
+        cc: fatal error: '-fuse-linker-plugin', but liblto_plugin.so not found
+        compilation terminated.
+        CMakeFiles/cmTC_505e2.dir/build.make:98: recipe for target 'cmTC_505e2' failed
+        make[1]: *** [cmTC_505e2] Error 1
+        make[1]: Leaving directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-ElQeLR'
+        Makefile:127: recipe for target 'cmTC_505e2/fast' failed
+        make: *** [cmTC_505e2/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/suc/cmake/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Check for working C compiler: /usr/bin/cc"
+    directories:
+      source: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-0dkfwQ"
+      binary: "/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-0dkfwQ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-0dkfwQ
+        
+        Run Build Command(s):/home/suc/cmake/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_296f5/fast && /usr/bin/make  -f CMakeFiles/cmTC_296f5.dir/build.make CMakeFiles/cmTC_296f5.dir/build
+        make[1]: Entering directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-0dkfwQ'
+        Building C object CMakeFiles/cmTC_296f5.dir/testCCompiler.c.o
+        /usr/bin/cc    -o CMakeFiles/cmTC_296f5.dir/testCCompiler.c.o -c /home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-0dkfwQ/testCCompiler.c
+        Linking C executable cmTC_296f5
+        /home/suc/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_296f5.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_296f5.dir/testCCompiler.c.o -o cmTC_296f5 
+        cc: fatal error: ‘-fuse-linker-plugin’, but liblto_plugin.so not found
+        compilation terminated.
+        CMakeFiles/cmTC_296f5.dir/build.make:98: recipe for target 'cmTC_296f5' failed
+        make[1]: *** [cmTC_296f5] Error 1
+        make[1]: Leaving directory '/home/suc/tmp/toy_interpreter-master/build/CMakeFiles/CMakeScratch/TryCompile-0dkfwQ'
+        Makefile:127: recipe for target 'cmTC_296f5/fast' failed
+        make: *** [cmTC_296f5/fast] Error 2
+        
+      exitCode: 2
+...
